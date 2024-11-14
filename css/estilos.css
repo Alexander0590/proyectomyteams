@@ -71,25 +71,30 @@
 }
 
 /* Responsividad */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .error-code {
-        font-size: 5rem;
+        font-size: 60px;
     }
 
     .error-message {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .icon-illustration {
-        font-size: 3rem;
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .error-code {
+        font-size: 50px;
     }
 
-    .error-container {
-        padding: 30px 20px;
+    .error-message {
+        font-size: 14px;
     }
 
-    .btn-custom {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+    .icon-illustration {
+        font-size: 60px;
     }
 }

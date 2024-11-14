@@ -264,3 +264,42 @@
             transform: scale(1.05);
             color: #ffffff; 
         }
+
+
+
+         /* Responsividad */
+         @media (max-width: 768px) {
+            .welcome-title {
+                font-size: 28px;
+            }
+
+            .welcome-subtitle {
+                font-size: 16px;
+            }
+
+            .btn-cta {
+                padding: 8px 16px;
+            }
+
+            .welcome-logo {
+                max-width: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .welcome-title {
+                font-size: 24px;
+            }
+
+            .welcome-subtitle {
+                font-size: 14px;
+            }
+
+            .btn-cta {
+                padding: 6px 14px;
+            }
+
+            .welcome-logo {
+                max-width: 200px;
+            }
+        }
