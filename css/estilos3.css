@@ -1,0 +1,198 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+    color: #e0e0e0;
+    margin: 0;
+    padding-top: 56px;
+}
+h1, h2, h3 {
+    color: #32cd32;
+    text-shadow: 0 0 5px #32cd32, 0 0 10px #1e1e1e;
+}
+.navbar-dark {
+    background: rgba(30, 30, 30, 0.85); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 15px #32cd32;
+    border-bottom: 2px solid #32cd32;
+    padding: 10px 0;
+    transition: background 0.5s ease;
+}
+.navbar-brand {
+    color: #32cd32;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #32cd32, 0 0 15px #1e1e1e;
+    transition: transform 0.3s ease;
+}
+.navbar-brand:hover {
+    transform: scale(1.1);
+    color: #28a428;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #32cd32;
+    text-shadow: 0 0 8px #32cd32;
+    transform: scale(1.1);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #32cd32;
+    font-weight: bold;
+    border-bottom: 2px solid #32cd32;
+}
+.navbar-toggler {
+    border: none;
+    background: #32cd32;
+    box-shadow: 0 0 5px #32cd32, 0 0 10px #1e1e1e;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.navbar-toggler:hover {
+    transform: scale(1.1);
+    background-color: #28a428;
+}
+.carousel-item img {
+    height: 80vh; 
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transform: scale(1.1);
+    animation: fadeInScale 1.5s ease forwards;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 15px #32cd32;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    border-radius: 5px;
+}
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(1.1); }
+    to { opacity: 1; transform: scale(1); }
+}
+section {
+    padding: 60px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+}
+.about-img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-top: -80px;
+}
+.about-text {
+    margin-top: 90px;
+   text-align: justify;
+}
+
+#contacto {
+background: linear-gradient(135deg, #121212, #2a2a2a);
+border-radius: 10px;
+padding: 80px 0;
+box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+.card-text{
+text-align: justify;
+}
+#contacto h2 {
+font-size: 2.5rem;
+color: #32cd32;
+text-shadow: 0 0 5px #32cd32, 0 0 15px rgba(50, 205, 50, 0.5);
+}
+#contacto p {
+font-size: 1.2rem;
+color: #e0e0e0;
+text-shadow: 0 0 3px rgba(0, 255, 0, 0.2), 0 0 5px rgba(0, 255, 0, 0.5);
+}
+.input-futurista {
+background-color: #ffffff;
+color: #e0e0e0;
+border: 2px solid #32cd32;
+border-radius: 15px;
+padding: 15px;
+font-size: 1.1rem;
+box-shadow: 0 0 10px rgba(50, 205, 50, 0.4);
+transition: all 0.3s ease-in-out;
+}
+.input-futurista:focus {
+border-color: #28a428;
+box-shadow: 0 0 15px rgba(50, 205, 50, 0.7);
+background-color: #121212;
+}
+.btn-custom {
+background-color: #32cd32;
+border: none;
+color: #121212;
+font-weight: 600;
+padding: 12px 30px;
+border-radius: 50px;
+box-shadow: 0 0 15px rgba(50, 205, 50, 0.7), 0 0 25px rgba(50, 205, 50, 0.4);
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn-custom:hover {
+background-color: #28a428;
+transform: scale(1.1);
+color: #ffffff;
+}
+form {
+background-color: rgba(0, 0, 0, 0.7);
+border-radius: 10px;
+padding: 30px;
+box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+}
+form input, form textarea {
+border-radius: 15px;
+}
+input, textarea, button {
+transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+transform: scale(1.02);
+background-color: #121212;
+
+}
+button {
+transform: scale(1);
+}
+button:hover {
+transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+#contacto {
+padding: 40px 0;
+}
+
+#contacto h2 {
+font-size: 2rem;
+}
+
+#contacto p {
+font-size: 1rem;
+}
+}
+.whatsapp-contact {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 9999;
+transition: transform 0.3s ease;
+}
+.whatsapp-contact:hover {
+transform: scale(1.1);
+}
+.whatsapp-icon i {
+border-radius: 80%;
+box-shadow: 0 0 10px rgba(0, 255, 0, 0.4), 0 0 20px rgba(0, 255, 0, 0.5);
+}
